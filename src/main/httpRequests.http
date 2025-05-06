@@ -1,0 +1,38 @@
+### GET request to example server
+GET http://localhost:8080/
+
+###
+GET http://localhost:8080/api/v1/software-engineers
+###
+GET http://localhost:8080/api/v1/software-engineers/1
+
+###
+POST http://localhost:8080/api/v1/software-engineers
+Content-Type: application/json
+
+{
+  "name": "Jon",
+  "techStack": "C++,Java, Android, Spring"
+}
+
+###
+POST http://localhost:8080/api/v1/software-engineers
+Content-Type: application/json
+
+{
+"name": "Jon2",
+"techStack": "EVERYTHING"
+}
+
+###
+DELETE http://localhost:8080/api/v1/software-engineers/1
+
+
+###
+PUT http://localhost:8080/api/v1/software-engineers/1
+Content-Type: application/json
+
+{
+  "name": "Jon2",
+  "techStack": "SOMETHING"
+}
